@@ -1,0 +1,200 @@
+//change *background color 
+body {
+  background-color: rgba(251, 248, 248, 1)
+}
+
+
+/* // Simple Scroll */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, .9);
+  }
+  
+.card {
+  max-width: 90%!important;
+  width: 650px!important;
+
+}
+.LoginCard {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 7px;
+    height: 520px;
+    margin: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+
+    transform: translate(-50%, -50%);
+}
+
+*{
+   // border: red solid 1px;
+}
+
+//add vignette to image 
+.vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgb(51, 81, 252);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+    .clearance-tape {
+      padding: 1.5rem;
+      
+      background: repeating-linear-gradient(
+        -45deg,
+        #f2a417,
+        #f2a417 15px,
+        #141617 15px,
+        #141617 30px
+      );
+    }
+//     html,
+// body,
+// #root,
+// .App {
+//   margin: 0;
+//   height: 100%;
+// }
+
+.leaflet-container{
+  height: 100%;
+  width: 100%;
+}
+
+/*body{
+  padding-top: 20px;
+}*/
+.school-logo{
+  width: 90%;
+    max-width: 260px;
+    margin-top: 20px;
+
+    margin: auto;
+
+    margin-bottom: -30px;
+}
+
+.standard-input{
+  width: 90%;
+  max-width: 300px;
+  //margin: auto;
+  margin-block: 15px;
+}
+
+.user-info-input-fields{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 718px;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+@media (max-width: 500px) {
+  .user-info-input-fields{
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .margin-on-mobile{
+    margin-top: 40px;
+  }
+}
+
+.map-date-time{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+//fade in animation 
+.fade-in {
+  animation: fadeIn ease 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+//fade out after 5 seconds 
+.fade-out {
+  animation: fadeOut ease 0.7s;
+ // animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+
+.university-background{
+  //set background image from media folder upm.jpg 
+  background-image: url('./media/upm.jpg');
+  //set background image to fixed 
+  background-attachment: fixed;
+  //set background image to cover
+  background-size: cover;
+  //set background image to center
+  background-position: center;
+min-height: 100vh;
+}
